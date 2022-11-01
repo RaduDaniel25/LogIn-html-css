@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UFT-8" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Log in Interface</title>
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <button
+      type="button"
+      class="btn-primary"
+      data-toggle="modal"
+      data-target="#exampleModal"
+    >
+      Sign Up
+    </button>
+    <div class="main hidden">
+      <input type="checkbox" id="chk" aria-hidden="true" />
+
+      <div class="signup">
+        <from>
+          <label for="chk" aria-hidden="true">Sign up</label>
+
+          <input type="text" name="txt" placeholder="User name" required="" />
+
+          <input type="email" name="email" placeholder="Email" required="" />
+
+          <input
+            type="password"
+            name="pswd"
+            placeholder="Password"
+            required=""
+          />
+
+          <button>Sing up</button>
+        </from>
+      </div>
+      <div class="login">
+        <form>
+          <label for="chk" aria-hidden="true">Login</label>
+          <input type="email" name="email" placeholder="Email" required="" />
+          <input
+            type="password"
+            name="pswd"
+            placeholder="Password"
+            required=""
+          />
+          <button>Log in</button>
+        </form>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
